@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : Skeleton 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20130902
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+    <link href="default.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.carousel.min.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.theme.default.min.css"></link>
+    <LINK REL=stylesheet HREF="3d.css" TYPE="text/css">
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/owl.carousel.min.js"></script>
+    <style fprolloverstyle>A:hover {color: #FF0000; font-size: 16pt; text-transform: uppercase; font-weight: bold}</style>
+    <style>	
+    
+    .item
+	{
+		display: block;
+		width: 100%;
+		margin: 0 0 2em 0;
+	}
+    b {
+        margin:0;
+        padding:0;
+        float: left;
+        text-align: justify;
+        height: 150px;
+        width: 0%;
+    }		
+    body {
+        margin:0;
+        padding:0;
+        font-family:"montserrat";
+        background-image:linear-gradient(125deg,#2c3e50,#27ae60,#2980b9,#e74c3c,#8e44ad);
+        background-size:2000%;
+        animation:bganimation 15s infinite;
+    }
+    .text {
+        color:white;
+        text-align:center;
+        text-transform:uppercase;
+        margin:350px 0;
+        font-size:22px;
+    }
+    @keyframes bganimation {
+        0% {
+        background-position:0% 50%;
+        }
+        50% {
+            background-position:100% 50%;
+        }
+        100% {
+            background-position:0% 50%;
+        }
+    }
+    </style>
+    <SCRIPT LANGUAGE="JavaScript"> 
+        
+        cookie_name = "Counter_Cookie";
+        
+        function doCookie() {
+        if(document.cookie) 
+        {index = document.cookie.indexOf(cookie_name);} 
+        else 
+        {index = -1;}
+        
+        var expires = "Monday, 04-Apr-2010 05:00:00 GMT"
+        
+        if (index == -1) 
+        {document.cookie=cookie_name+"=1; expires=" + expires;} 
+        else 
+        {
+        countbegin = (document.cookie.indexOf("=", index) + 1);
+        countend = document.cookie.indexOf(";", index);
+        if (countend == -1) {
+        countend = document.cookie.length;
+        }
+        count = eval(document.cookie.substring(countbegin, countend)) + 1;
+        
+        document.cookie=cookie_name+"="+count+"; expires=" + expires;
+        }
+        }
+        
+        function gettimes() {
+        if(document.cookie) {
+        index = document.cookie.indexOf(cookie_name);
+        if (index != -1) {
+        countbegin = (document.cookie.indexOf("=", index) + 1);
+        countend = document.cookie.indexOf(";", index);
+        if (countend == -1) {
+        countend = document.cookie.length;
+        }
+        count = document.cookie.substring(countbegin, countend);
+        if (count == 1) {
+        return (count+" 次");
+        } else {
+        return (count+" 次");
+        }
+        }
+        }
+        return ("0 次");
+        }
+        
+        // done hiding script --> 
+        
+        </SCRIPT>
+        
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel( {
+                loop: true,
+                items: 1,
+                autoplay: true,
+                nav: false,
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="page" class="container">
+        <div id="header">
+            <div id="menu" style="text-transform: uppercase;">
+                <ul>
+                    <li class="current_page_item"><a href="#welcome" accesskey="1" title="">主頁面</a></li>
+                    <li><a href="#" accesskey="2" title="">最少花費</a></li>
+                    <li><a href="#" accesskey="3" title="">最省路徑</a></li>
+                    <li><a href="#copyright" accesskey="4" title="">參考資料</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="main">
+            <!-- <div class="pics"> 
+                <img src="1.jpg" alt="" width="350" height="250"> 
+                <img src="2.jpg" alt="" width="350" height="250">
+                <img src="3.jpg" alt="" width="350" height="250">
+            </div> -->
+                <div class =  "owl-carousel">
+                    <div class = "item"><img src = "1.jpg"></div>
+                    <div class = "item"><img src = "22.jpg"></div>
+                    <div class = "item"><img src = "4.jpg"></div>
+                    <div class = "item"><img src = "55.jpg"></div>
+                    <div class = "item"><img src = "66.jpg"></div>
+                </div>
+            <!-- <div id="banner">
+                <img src="1.jpg" alt="" class="image-full" />
+            </div> -->
+            <div id="welcome">
+                <div class="title" >
+                    <h2 >Transportation from Keelung to Taipei</h2>
+                        <!-- <span class="byline">Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna
+                            congue</span> -->
+                </div>
+                <p style="font-size: 120%;">你是一個精打計算的人嗎？歡迎您來到這個網站，只要選擇您的目的地，我們將提供您最省時與花費最少車資的路徑</p style="font-size: 120%;" >
+                <ul class="actions">
+                    <br><br>
+                    <!-- <li><a href="#" class="button">Etiam posuere</a></li> -->
+                </ul>
+            </div>
+            <div id="featured">
+                <div class="title">
+                    <h2>操作說明</h2>
+                </div>
+                <ul class="style1">
+                    <li class="first">
+                        <p class="date"><a href="#"><b>第一步</b></a></p>
+                        <h2>選擇方案</h2>
+                        <p>Consectetuer adipiscing elit. Nam pede erat, porta eu, lobortis eget, tempus et,
+                                tellus. Etiam neque. Vivamus consequat lorem at nisl. Nullam non wisi a sem semper
+                                eleifend. Etiam non felis. Donec ut ante.</p>
+                    </li>
+                    <li>
+                        <p class="date"><a href="#"><b>第二步</b></a></p>
+                        <h2>點選終點站</h2>
+                        <p>Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus
+                                egestas at sem. Mauris quam enim, molestie. Donec leo, vivamus fermentum nibh in augue
+                                praesent congue rutrum.</p>
+                    </li>
+                    <li>
+                        <p class="date"><a href="#"><b>第三步</b></a></p>
+                        <h2>更多功能</h2>
+                        <p>Consectetuer adipiscing elit. Nam pede erat, porta eu, lobortis eget, tempus et,
+                                tellus. Etiam neque. Vivamus consequat lorem at nisl. Nullam non wisi a sem semper
+                                eleifend. Etiam non felis. Donec ut ante.</p>
+                    </li>
+                </ul>
+            </div>
+            <div id="copyright">
+                <span style="font-size: 130%;">&copy; 參考資料</span>
+                <span><a href="https://tpu.thinkpower.com.tw/tpu/articleDetails/920" target="_blank">自動輪播圖片</a></span>
+                <span><a href="https://www.metro.taipei/cp.aspx?n=ECEADC266D7120A7" target="_blank">台北捷運票價及乘車時間</a></span>
+                <span><a href="http://www.jq22.com" target="_blank">jQuery插件庫</a></span>
+            </div>
+            <SCRIPT LANGUAGE="javascript"> document.write("謝謝您光臨本站 "+gettimes()+" 。"); </SCRIPT>
+        </div>
+    </div>
+</body>
+
+</html>
